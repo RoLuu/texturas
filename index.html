@@ -6,7 +6,7 @@
   <body style='margin : 0px; overflow: hidden;'>
 
     <a-scene stats embedded arjs='trackingMethod: best;'>
-
+    	<a-anchor hit-testing-enabled='true'>
 	   <a-assets>
 	      <a-asset-item id="textura" src="assets/zuzanne.gltf"></a-asset-item>
 	    </a-assets>
@@ -15,7 +15,7 @@
 	      <a-entity gltf-model-next="#textura" rotation= "180 0 0" scale= "0.25 0.25 0.25">
 	      </a-entity>
 	  	</a-marker>
-
+	  	</a-anchor>
 	  	<a-entity camera></a-entity>
 
     </a-scene>
