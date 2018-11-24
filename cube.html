@@ -104,16 +104,21 @@ function initialize()
 	////////////////////////////////////////////////////////////
 	// setup markerRoots
 	////////////////////////////////////////////////////////////
-
-	let loader = new THREE.TextureLoader();
-	let texture = loader.load( 'textura1.jpg' );
+	
+	let textura1 = new THREE.TextureLoader().load( 'textura1.jpg' );
+	let textura2 = new THREE.TextureLoader().load( 'textura2.jpg' );
+	let textura3 = new THREE.TextureLoader().load( 'textura3.jpg' );
+	let textura4 = new THREE.TextureLoader().load( 'textura4.jpg' );
+	let textura5 = new THREE.TextureLoader().load( 'textura5.jpg' );
+	let textura6 = new THREE.TextureLoader().load( 'textura6.jpg' );
+	let textura7 = new THREE.TextureLoader().load( 'textura7.jpg' );
 
 	var myImage = document.getElementById('imagen');
 
 		
 	let patternArray = ["letterA", "letterB", "letterC", "letterD", "letterF", "kanji", "hiro"];
 	//let colorArray   = [0xff0000, 0xff8800, 0xffff00, 0x00cc00, 0x0000ff, 0xcc00ff, 0xcccccc];
-	let textureArray = ["textura1.jpg", "textura2.jpg", "textura3.jpg", "textura4.jpg", "textura5.jpg", "textura6.jpg", "textura7.jpg"];
+	let textureArray = ["textura1", "textura2", "textura3", "textura4", "textura5", "textura6", "textura7"];
 	for (let i = 0; i < 7; i++)
 	{
 		let markerRoot = new THREE.Group();
