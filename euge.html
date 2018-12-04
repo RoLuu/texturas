@@ -12,13 +12,24 @@
 
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
+<!-------------------Primer patron-------------->
       <a-marker type='pattern' url='data/pattern2.patt'>
         <!-- Adding an OBJ file to an AR Project-->
         <a-entity 
-            obj-model="obj: url(assets/euge.obj); mtl: url(assets/euge.mtl)" rotation= "270 0 0" scale="0.5 0.5 0.5">
+            obj-model="obj: url(assets/euge.obj); mtl: url(assets/euge.mtl)" rotation= "270 0 0" scale="1.5 1.5 1.5">
         </a-entity>
               
       </a-marker>
+<!-------------------Segundo patron-------------->
+      <a-marker type='pattern' url='data/pattern1.patt'>
+        <!-- Adding an OBJ file to an AR Project-->
+        <a-entity 
+            obj-model="obj: url(assets/mari.obj); mtl: url(assets/mari.mtl)" rotation= "270 0 0" scale="1.5 1.5 1.5">
+        </a-entity>
+              
+      </a-marker>
+
   <a-entity camera>
   </a-entity>
   </a-scene>
